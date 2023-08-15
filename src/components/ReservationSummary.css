@@ -1,0 +1,26 @@
+/* src/components/ReservationSummary.css */
+
+.reservation-summary {
+  border: 1px solid var(--reservation-summary-border-color, #ccc);
+  padding: 10px;
+  background-color: var(--reservation-summary-bg-color, #f9f9f9);
+}
+
+.reservation-summary h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: var(--reservation-summary-heading-color, #333);
+}
+
+.reservation-summary ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.reservation-summary li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: var(--reservation-summary-item-color, #555);
+}
+
+/* Customize these styles based on your design */

@@ -1,0 +1,42 @@
+/* src/components/SeatRow.css */
+
+.seat-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Optional: Customize the gap between seats */
+.seat-row .seat {
+  margin-right: 10px;
+}
+
+/* Optional: Style for different seat availability */
+.seat-row .seat {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.seat-row .available {
+  background-color: #c7e4f9;
+  color: #333;
+}
+
+.seat-row .selected {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.seat-row .booked {
+  background-color: #e57373;
+  color: #fff;
+}
+
+/* Add any additional styling as needed */

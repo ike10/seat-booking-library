@@ -1,0 +1,16 @@
+/* src/components/SeatMap.css */
+
+.seat-map {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  grid-gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Optional: Customize the gap between rows */
+.seat-row {
+  margin-bottom: 10px;
+}
+
+/* Add any additional styling as needed */
