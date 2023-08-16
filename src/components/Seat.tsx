@@ -1,9 +1,11 @@
-// src/components/Seat.tsx
-
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './Seat.css';
+
+export type ReservedSeat = {
+  seatNumber: string;
+  availability: 'reserved';
+};
 
 interface SeatProps {
   seatNumber: string;
@@ -21,10 +23,5 @@ const Seat: React.FC<SeatProps> = ({ seatNumber, availability, onClick }) => {
   );
 };
 
-Seat.propTypes = {
-  seatNumber: PropTypes.string.isRequired,
-  availability: PropTypes.oneOf(['available', 'selected', 'booked']).isRequired,
-  onClick: PropTypes.func.isRequired,
-};
-
 export default Seat;
+

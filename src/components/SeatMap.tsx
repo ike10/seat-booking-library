@@ -1,7 +1,4 @@
-// src/components/SeatMap.tsx
-
 import React from 'react';
-import PropTypes from 'prop-types';
 import Seat from './Seat';
 import './SeatMap.css';
 
@@ -30,14 +27,5 @@ const SeatMap: React.FC<SeatMapProps> = ({ seatData, onSeatClick }) => {
   );
 };
 
-SeatMap.propTypes = {
-  seatData: PropTypes.arrayOf(
-    PropTypes.shape({
-      seatNumber: PropTypes.string.isRequired,
-      availability: PropTypes.oneOf(['available', 'selected', 'booked']).isRequired,
-    })
-  ).isRequired,
-  onSeatClick: PropTypes.func.isRequired,
-};
-
 export default SeatMap;
+

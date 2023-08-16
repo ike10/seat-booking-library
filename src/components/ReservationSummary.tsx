@@ -1,8 +1,6 @@
-// src/components/ReservationSummary.tsx
-
 import React from 'react';
-import PropTypes from 'prop-types';
 import './ReservationSummary.css';
+import { ReservedSeat } from './Seat';
 
 interface ReservationSummaryProps {
   reservedSeats: ReservedSeat[];
@@ -36,18 +34,6 @@ const ReservationSummary: React.FC<ReservationSummaryProps> = ({
       </ul>
     </div>
   );
-};
-
-ReservationSummary.propTypes = {
-  reservedSeats: PropTypes.arrayOf(
-    PropTypes.shape({
-      seatNumber: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-  borderColor: PropTypes.string,
-  bgColor: PropTypes.string,
-  headingColor: PropTypes.string,
-  itemColor: PropTypes.string,
 };
 
 export default ReservationSummary;

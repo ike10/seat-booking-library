@@ -1,7 +1,4 @@
-// src/components/SeatRow.tsx
-
 import React from 'react';
-import PropTypes from 'prop-types';
 import Seat from './Seat';
 import './SeatRow.css';
 
@@ -30,15 +27,6 @@ const SeatRow: React.FC<SeatRowProps> = ({ seatData, onSeatClick }) => {
   );
 };
 
-SeatRow.propTypes = {
-  seatData: PropTypes.arrayOf(
-    PropTypes.shape({
-      seatNumber: PropTypes.string.isRequired,
-      availability: PropTypes.oneOf(['available', 'selected', 'booked']).isRequired,
-    })
-  ).isRequired,
-  onSeatClick: PropTypes.func.isRequired,
-};
-
 export default SeatRow;
+
 
